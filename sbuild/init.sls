@@ -13,6 +13,8 @@ include:
 } %}
 {% set default_conf = {
     'union-type': overlay_fs,
+    'union-overlay-directory': '/dev/shm',
+    'command-prefix': 'eatmydata',
     'profile': 'sbuild',
     'groups': 'root,sbuild',
     'root-groups': 'root,sbuild',
